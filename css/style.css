@@ -1,0 +1,97 @@
+/* Стилизация тела страницы */
+body {
+	background-color: #d4fce4;
+	margin: 0;
+	font-family: 'Comfortaa', cursive;
+	font-size: 1rem;
+}
+
+*, 
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1 {
+	margin: 30px auto;
+	color: #000;
+	font-size: 3vw;
+}
+
+h2 {
+	margin: 30px auto;
+	color: #000;
+	font-size: 3vw;
+}
+
+p {
+	margin: 0 0 1rem;
+}
+
+.container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+	margin: 0 auto;
+	
+	text-align: center;
+}
+
+/* Стили для input */
+input {
+	margin: 10px auto;
+
+	width: 50%;
+	outline:none;
+	background: #ffffff;
+	cursor: pointer;
+	font-size: 3vw;
+	color: #000000;
+	text-align: left;
+	border: 0;
+	padding: 10px 30px 10px 20px;
+	font-family: "Comfortaa", sans-serif;
+}
+
+/* При выделении текста у него будут следующие функиции - */
+input::selection {
+	background-color: #c1e6d0;
+	color: #fff;
+}
+
+/* При фокусе на Input */
+input:focus {
+	box-shadow: 0px 0px 30px 0px #c1e6d0;
+}
+
+
+input::placeholder {
+	color: #c1e6d0;
+}
+
+/* Стили для кнопки */
+button {
+	margin: 10px auto;
+	text-transform: lowercase;
+
+	width: 50%;
+
+	outline:none;
+	background: #c1e6d0;
+	cursor: pointer;
+	font-size: 3vw;
+	color: #fff;
+	text-align: center;
+	border: 2px solid #c1e6d0;
+	padding: 10px 30px 10px 30px;
+	font-family: "Comfortaa", sans-serif;
+
+	transition: background-color .2s linear, color .2s linear;
+}
+
+
+button:hover {
+	border: 2px solid #c1e6d0;
+	background-color: #fff;
+	color: #c1e6d0;
+}
