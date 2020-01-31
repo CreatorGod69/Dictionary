@@ -52,14 +52,12 @@ function СreateWord (english, russian) {
 если он корректный, то слово добавляется в массив words. */ 
 
 addButton.addEventListener('click', () => {
-    /* Добавить больше проверок */
     if(
         engWord.value.length < 1 || 
         rusWord.value.length < 1 ||
         !isNaN(engWord.value) ||
         !isNaN(rusWord.value)
     ) {
-        /* Сделать проверку каждого инпута индивидуально. */
         for(let key of inputs) {
             key.classList.add('error');
         }
